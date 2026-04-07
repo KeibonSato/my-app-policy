@@ -1,2 +1,2 @@
 # my-app-policy
-SimpleMinesweeperのプライバシーポリシー
+AnimeWatchのプライバシーポリシー
