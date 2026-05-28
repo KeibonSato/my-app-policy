@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - AnimeWatch</title>
+    <title>Privacy Policy / プライバシーポリシー - AniLog</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
         h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
         h2 { margin-top: 30px; background: #f4f4f4; padding: 5px 10px; }
         ul { padding-left: 20px; }
         .footer { margin-top: 50px; font-size: 0.8em; color: #777; }
+        .lang-divider { margin: 60px 0; border: none; border-top: 3px solid #333; }
+        .lang-nav { margin-bottom: 20px; }
+        .lang-nav a { margin-right: 16px; color: #0066cc; }
     </style>
 </head>
 <body>
 
+    <!-- 言語ナビ -->
+    <div class="lang-nav">
+        <a href="#japanese">日本語</a>
+        <a href="#english">English</a>
+    </div>
+
+    <!-- ========== 日本語 ========== -->
+    <section id="japanese">
+
     <h1>プライバシーポリシー</h1>
-    <p>「AnimeWatch」（以下「本アプリ」）の開発者（以下「当方」）は、本アプリにおけるユーザーの情報の取り扱いについて、以下の通りプライバシーポリシーを定めます。</p>
+    <p>「AniLog」（以下「本アプリ」）の開発者（以下「当方」）は、本アプリにおけるユーザーの情報の取り扱いについて、以下の通りプライバシーポリシーを定めます。</p>
 
     <h2>1. 収集する情報とその利用目的</h2>
     <p>本アプリでは、広告配信および利用状況解析のため、以下の第三者提供のサービスを利用しています。これらのサービスは、端末識別子（広告IDなど）やCookie、アプリの使用履歴などの情報を自動的に収集する場合があります。</p>
@@ -31,17 +43,19 @@
     </ul>
     <p>Googleアカウント連携は任意の機能です。ご利用にならない場合、上記の情報は収集されず、データはお使いの端末内にのみ保存されます。</p>
 
-    <h2>2. データ収集の目的</h2>
-    <p>収集するデータは、以下の目的で利用します。</p>
+    <p>さらに、Googleアカウント連携をご利用のユーザーが任意でレビュー・評価投稿機能をご利用になる場合、以下の情報を収集・公開します。</p>
     <ul>
-        <li><strong>アプリの機能提供</strong>：クラウド同期・バックアップなどの機能を有効にするため</li>
-        <li><strong>アカウント管理</strong>：Googleアカウントによる認証およびアカウントの設定・管理のため</li>
-        <li><strong>分析・改善</strong>：アプリの利用状況の把握、パフォーマンス改善、バグ修正のため</li>
-        <li><strong>広告配信</strong>：Google AdMobによる広告の表示および広告効果の測定のため</li>
+        <li><strong>ニックネーム</strong>：ユーザーが設定した表示名。投稿したレビューと合わせて他のユーザーに公開されます。</li>
+        <li><strong>星評価（数値）</strong>：アニメに対して付けた1〜5の評価。他のユーザーに公開されます。</li>
+        <li><strong>レビューコメント（任意）</strong>：ユーザーが任意で入力したテキスト。他のユーザーに公開されます。</li>
+        <li><strong>投稿日時</strong>：レビューの作成日・更新日。他のユーザーに公開されます。</li>
     </ul>
+    <p>レビュー・評価の投稿は任意の機能です。投稿した内容はアプリ内の「みんなのレビュー」として他のユーザーに公開されます。個人を特定できる情報（本名・連絡先等）はレビューに含めないようにしてください。</p>
 
-    <h2>3. 第三者への提供</h2>
-    <p>収集された情報は、上記のサービス提供者（Google Inc.）のサーバーに送信され、各社のプライバシーポリシーに基づいて管理されます。当方がユーザー個人を特定できる情報を第三者に提供することはありません。詳細は以下のリンクよりご確認ください。</p>
+    <h2>2. 第三者への提供・公開について</h2>
+    <p>収集された情報は、上記のサービス提供者（Google Inc.）のサーバーに送信され、各社のプライバシーポリシーに基づいて管理されます。当方がユーザー個人を特定できる情報を第三者に提供することはありません。</p>
+    <p>ただし、ユーザーが投稿したレビュー・評価・ニックネームは、本アプリを利用する他のユーザーに対して公開されます。これはサービスの性質上必要な公開であり、投稿前にご確認の上ご利用ください。</p>
+    <p>詳細は以下のリンクよりご確認ください。</p>
     <ul>
         <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob プライバシーポリシー</a></li>
         <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Analytics for Firebase プライバシーポリシー</a></li>
@@ -49,34 +63,85 @@
         <li><a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a></li>
     </ul>
 
-    <h2>4. データの安全性について</h2>
-    <p>本アプリでは、ユーザーデータの安全性を確保するために以下の対策を講じています。</p>
-    <ul>
-        <li><strong>通信の暗号化</strong>：クラウドとの通信にはHTTPS（TLS）を使用しており、転送中のデータは暗号化されます。</li>
-        <li><strong>サーバー側の暗号化</strong>：Google Firebase（Cloud Firestore）はサーバー側でデータを暗号化して保管します。</li>
-        <li><strong>認証</strong>：クラウド機能の利用にはGoogleアカウント認証を必須とし、本人以外がデータにアクセスできない仕組みを採用しています。</li>
-    </ul>
+    <h2>3. データの管理・削除について</h2>
+    <p>Googleアカウント連携をご利用の場合、クラウド上に保存されたデータはアプリの設定画面よりログアウトすることで、以降の同期を停止できます。</p>
+    <p>投稿済みのレビュー・評価は、アプリ内のレビュー編集画面から削除することができます。削除後は他のユーザーへの公開も停止されます。</p>
+    <p>クラウド上のすべてのデータ（アカウント情報・レビュー等）の完全な削除をご希望の場合は、お問い合わせください。</p>
 
-    <h2>5. データの管理・削除について</h2>
-    <p>ユーザーは以下の方法でご自身のデータを管理・削除できます。</p>
-    <ul>
-        <li><strong>ログアウト</strong>：アプリの設定画面よりGoogleアカウントからログアウトすることで、以降のクラウド同期を停止できます。端末内のローカルデータは保持されます。</li>
-        <li><strong>アカウントとクラウドデータの削除</strong>：設定画面の「アカウントを削除」より、クラウド上に保存されたすべてのデータおよびアカウント情報を削除できます。この操作は取り消せません。削除後も端末内のローカルデータは保持されます。</li>
-        <li><strong>お問い合わせによる削除</strong>：上記の方法でご対応が難しい場合は、下記お問い合わせ先までご連絡ください。</li>
-    </ul>
-    <p>データ削除に関するお問い合わせ先：<a href="mailto:shio.keibon@gmail.com">shio.keibon@gmail.com</a></p>
-
-    <h2>6. 免責事項</h2>
+    <h2>4. 免責事項</h2>
     <p>本アプリの利用により生じた損害や不利益について、当方は一切の責任を負いません。本アプリの正確性や安全性について万全を期しておりますが、保証するものではありません。あらかじめご了承ください。</p>
 
-    <h2>7. プライバシーポリシーの変更</h2>
+    <h2>5. プライバシーポリシーの変更</h2>
     <p>当方は、法令の制定、改正等により、本ポリシーを適宜見直し、予告なく変更する場合があります。</p>
 
     <div class="footer">
         <p>制定日：2026年4月1日</p>
-        <p>最終更新日：2026年4月29日</p>
-        <p>開発者：[Keibon]</p>
+        <p>最終更新日：2026年5月28日</p>
+        <p>開発者：Keibon</p>
     </div>
+
+    </section>
+
+    <hr class="lang-divider">
+
+    <!-- ========== English ========== -->
+    <section id="english">
+
+    <h1>Privacy Policy</h1>
+    <p>The developer of "AniLog" (hereinafter "the App") has established the following Privacy Policy regarding the handling of user information within the App.</p>
+
+    <h2>1. Information We Collect and How We Use It</h2>
+    <p>The App uses the following third-party services for ad delivery and usage analytics. These services may automatically collect information such as device identifiers (e.g., advertising IDs), cookies, and app usage history.</p>
+    <ul>
+        <li><strong>Google AdMob (Ad Delivery)</strong>: Used to display ads tailored to users' interests.</li>
+        <li><strong>Firebase Analytics (Usage Analytics)</strong>: Used to understand how the App is used and to improve features and fix bugs.</li>
+    </ul>
+
+    <p>If you choose to use the optional Google account sign-in feature, the following additional information will be collected:</p>
+    <ul>
+        <li><strong>Google account information (email address, user ID)</strong>: Used to identify your account and to sync and back up your data.</li>
+        <li><strong>In-app data (anime watchlist, ratings, memos, etc.)</strong>: Stored on Google Firebase (Cloud Firestore) to enable data sync across multiple devices and data transfer when switching devices.</li>
+    </ul>
+    <p>Google account sign-in is optional. If you choose not to use it, none of the above information will be collected and your data will be stored only on your device.</p>
+
+    <p>If you additionally choose to use the optional review and rating feature, the following information will be collected and made publicly visible:</p>
+    <ul>
+        <li><strong>Nickname</strong>: Your display name set in the App. Shown publicly alongside your posted reviews.</li>
+        <li><strong>Star rating (numeric)</strong>: A rating from 1 to 5 given to an anime. Shown publicly to other users.</li>
+        <li><strong>Review comment (optional)</strong>: Text entered at your discretion. Shown publicly to other users.</li>
+        <li><strong>Post date</strong>: The date your review was created or last updated. Shown publicly to other users.</li>
+    </ul>
+    <p>Posting reviews and ratings is entirely optional. Submitted content will be displayed publicly to other users in the "Community Reviews" section of the App. Please do not include personally identifiable information (such as your real name or contact details) in your reviews.</p>
+
+    <h2>2. Sharing and Disclosure of Information</h2>
+    <p>Collected information is transmitted to the servers of the service providers listed above (Google Inc.) and managed in accordance with their respective privacy policies. We will never provide personally identifiable information to third parties.</p>
+    <p>However, reviews, ratings, and nicknames that you post will be visible to other users of the App. This disclosure is necessary for the nature of the service; please review this before submitting content.</p>
+    <p>For more details, please refer to the following links:</p>
+    <ul>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob Privacy Policy</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Analytics for Firebase Privacy Policy</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase (Cloud Firestore) Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+    </ul>
+
+    <h2>3. Data Management and Deletion</h2>
+    <p>If you use Google account sign-in, you can stop further cloud sync at any time by signing out from the App's settings screen.</p>
+    <p>Posted reviews and ratings can be deleted from the review editing screen within the App. Once deleted, the content will no longer be visible to other users.</p>
+    <p>To request complete deletion of all your cloud data (account information, reviews, etc.), please contact us.</p>
+
+    <h2>4. Disclaimer</h2>
+    <p>We accept no responsibility for any damages or disadvantages arising from the use of the App. While we strive to ensure the accuracy and security of the App, we make no guarantees in this regard.</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may revise this policy as necessary in response to changes in laws or regulations, without prior notice.</p>
+
+    <div class="footer">
+        <p>Established: April 1, 2026</p>
+        <p>Last updated: May 28, 2026</p>
+        <p>Developer: Keibon</p>
+    </div>
+
+    </section>
 
 </body>
 </html>
