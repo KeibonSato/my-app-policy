@@ -20,6 +20,7 @@
     }
 
     header {
+
       background: #6441A4;
       color: #fff;
       padding: 20px 24px;
@@ -93,6 +94,7 @@
 
 ・登録配信者情報
 　ユーザーが登録したYouTubeチャンネルおよびTwitchアカウントの情報を、端末内のローカルデータベースおよびFirestore（プッシュ通知の配信に必要な場合のみ）に保存します。
+　また、Twitchアカウントでログインした場合、フォロー中のチャンネル一覧を取得し、ユーザーが選択した配信者を端末内のローカルデータベースに保存します。Twitchアカウントの認証情報（アクセストークン）はアプリ終了時に破棄され、サーバーには保存しません。
 
 ・通知設定
 　配信者ごとの通知ON/OFF設定を端末内およびFirestoreに保存します。
@@ -122,8 +124,8 @@
 　登録配信者の最新動画・ライブ配信情報を取得するために使用します。
 　<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>
 
-・Twitch API（配信情報の取得）
-　登録配信者のライブ配信状況を取得するために使用します。
+・Twitch API（配信情報の取得およびフォロー中チャンネルのインポート）
+　登録配信者のライブ配信状況を取得するために使用します。また、ユーザーがTwitchアカウントでログインした場合、フォロー中のチャンネル一覧を取得するために使用します（任意・ログイン時のみ）。
 　<a href="https://www.twitch.tv/p/ja-jp/legal/privacy-notice/" target="_blank" rel="noopener">Twitch プライバシーポリシー</a>
 
 ・Firebase Authentication（匿名認証）
@@ -180,7 +182,7 @@
     <p>プライバシーポリシーに関するご質問は、アプリ設定画面の「お問い合わせ」よりご連絡ください。</p>
   </section>
 
-  <footer>制定日：2026年7月1日　／　最終改定日：2026年7月1日</footer>
+  <footer>制定日：2025年1月1日　／　最終改定日：2026年8月16日</footer>
 
 </main>
 
